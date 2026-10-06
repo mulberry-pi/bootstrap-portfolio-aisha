@@ -16,6 +16,120 @@
   max-width: 42em;
 }
 
+body.page-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main {
+  flex: 1;
+}
+
+.contact-main {
+  width: min(100% - 2rem, 52rem);
+}
+
+.contact-heading {
+  max-width: 38rem;
+  margin: 0 auto 2rem;
+}
+
+.contact-eyebrow {
+  margin-bottom: .5rem;
+  color: #6c757d;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.contact-heading h1 {
+  margin-bottom: .75rem;
+  font-weight: 700;
+}
+
+.contact-heading > p:last-child {
+  margin-bottom: 0;
+  color: #5c636a;
+}
+
+.contact-form {
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border: 1px solid #dee2e6;
+  border-top: 3px solid #212529;
+  background: #fff;
+  box-shadow: 0 .75rem 2rem rgba(33, 37, 41, .06);
+}
+
+.contact-form .form-label {
+  margin-bottom: .4rem;
+  color: #212529;
+  font-size: .925rem;
+  font-weight: 600;
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+  min-height: 2.9rem;
+  border-color: #ced4da;
+  border-radius: .25rem;
+}
+
+.contact-form textarea.form-control {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+  border-color: #6c757d;
+  box-shadow: 0 0 0 .2rem rgba(33, 37, 41, .12);
+}
+
+.contact-submit {
+  min-height: 2.9rem;
+  padding-inline: 1.25rem;
+  font-weight: 600;
+}
+
+.site-footer {
+  width: 100%;
+  background-color: #212529;
+  color: #fff;
+}
+
+.site-footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer a {
+  color: rgba(255, 255, 255, .7);
+  text-decoration: none;
+  border-bottom: .2rem solid transparent;
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+  color: #fff;
+  border-bottom-color: rgba(255, 255, 255, .5);
+}
+
+@media (max-width: 575.98px) {
+  .site-footer-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
 .intro-copy {
   width: fit-content;
   max-width: min(100%, 38rem);
